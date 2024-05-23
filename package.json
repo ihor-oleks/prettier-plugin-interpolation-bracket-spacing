@@ -1,0 +1,50 @@
+{
+  "name": "prettier-plugin-interpolation-bracket-spacing",
+  "version": "1.0.0",
+  "description": "A Prettier plugin to respect bracket spacing option in interpolations",
+  "author": "Ihor Oleksandrov",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "files": [
+    "./dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihor-oleks/prettier-plugin-interpolation-bracket-spacing.git"
+  },
+  "engines": {
+    "node": "~20.12.0",
+    "pnpm": "~9.1.0"
+  },
+  "packageManager": "pnpm@9.1.2",
+  "scripts": {
+    "build": "esbuild ./src/index.ts --bundle --outdir=dist --platform=node \"--external:prettier\"",
+    "clean": "rimraf ./dist/",
+    "format": "prettier --write **/*.{js,json,md,ts,yaml,html}",
+    "lint": "eslint ./src/",
+    "prepare": "pnpm clean && pnpm build"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "~4.3.0",
+    "@types/node": "~20.12.0",
+    "@typescript-eslint/eslint-plugin": "~7.10.0",
+    "@typescript-eslint/parser": "~7.10.0",
+    "esbuild": "~0.21.0",
+    "eslint": "~8.57.0",
+    "prettier": "~3.2.0",
+    "prettier-plugin-lines-before-headings": "~1.0.0",
+    "rimraf": "~5.0.0",
+    "typescript": "~5.4.0"
+  },
+  "peerDependencies": {
+    "prettier": "^3"
+  },
+  "keywords": [
+    "prettier",
+    "plugin",
+    "angular",
+    "interpolation",
+    "bracket",
+    "spacing"
+  ]
+}
