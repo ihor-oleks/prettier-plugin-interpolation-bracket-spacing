@@ -1,0 +1,13 @@
+{
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "javascript.preferences.importModuleSpecifier": "relative",
+
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "typescript.preferences.importModuleSpecifier": "relative",
+
+  "cSpell.ignorePaths": [".git", ".vscode", "dist", "node_modules", "pnpm-lock.yaml"],
+
+  "cSpell.words": ["outdir", "trivago"]
+}
