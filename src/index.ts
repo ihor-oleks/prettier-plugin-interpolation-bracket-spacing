@@ -1,4 +1,4 @@
-import {AstPath, Doc, Printer, format, type Parser, type ParserOptions, type Plugin} from "prettier";
+import {AstPath, Doc, format, type Parser, type ParserOptions, type Plugin, Printer} from "prettier";
 import {parsers as angularParsers} from "prettier/plugins/angular";
 
 const getPlugins = (language: string, options: ParserOptions): Plugin[] => {
